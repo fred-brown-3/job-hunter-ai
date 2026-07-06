@@ -1,46 +1,53 @@
-# Jobhunt Sandbox
+# 🚀 Fred's Agentic Job Hunt Sandbox
 
-This is a development sandbox configured with the **Skills CLI** for managing AI agent capabilities (custom instructions, tools, and workflows).
+Welcome to the **Job Hunt Sandbox**—a custom-tailored workspace designed to automate, optimize, and streamline Fred's job search using agentic AI capabilities.
 
-## Managing Agent Skills
-
-This environment is set up to manage skills at both the project level and global level using the `skills` package.
-
-### Common Commands
-
-You can run these commands using `npx skills` (or via `npm run skills`):
-
-*   **Find available skills:**
-    ```bash
-    npx skills find
-    # Or search for specific terms
-    npx skills find web-design
-    ```
-*   **Add a new skill to the project:**
-    ```bash
-    npx skills add vercel-labs/agent-skills --skill web-design-guidelines
-    ```
-*   **List installed skills:**
-    ```bash
-    # Project-level skills:
-    npx skills list
-    
-    # Global-level skills:
-    npx skills list -g
-    ```
-*   **Restore skills from lockfile:**
-    ```bash
-    npx skills experimental_install
-    ```
-*   **Remove a skill:**
-    ```bash
-    npx skills remove web-design-guidelines
-    ```
+This environment leverages the **Skills CLI** (`npx skills`) to orchestrate modular capabilities (prompts, scripts, and workflows) that run on top of AI coding agents like Antigravity.
 
 ---
 
-## How it Works
+## 🎯 Project Core Objective
+To develop, test, and run AI agent tools that collaborate with Fred to find jobs, customize resumes, and track applications.
 
-1.  **Skills Lockfile (`skills-lock.json`):** Tracks the specific skills and versions installed in this project, similar to `package-lock.json`.
-2.  **Workspace Customizations (`.agents/skills/`):** When you add a project-level skill, it is installed under `.agents/skills/<skill-name>`.
-3.  **Agent Integration:** The AI agent (Antigravity) automatically discovers, loads, and uses the skills located in `.agents/skills/` when they match your current tasks and instructions.
+---
+
+## 🤖 Proposed Starter Agents & Skills
+
+### 1. 💼 LinkedIn Operator (`linkedin-operator`) - *Current Focus*
+*   **Purpose:** Automatically search, filter, and extract job listings from LinkedIn using browser automation.
+*   **Key Capabilities:**
+    *   Navigating LinkedIn job searches based on user queries.
+    *   Evaluating and extracting job cards (title, company, description, etc.).
+    *   Saving job leads to local database structures.
+
+### 2. 📝 Resume Tailor (`resume-tailor`) - *Up Next*
+*   **Purpose:** Automatically craft personalized resumes and cover letters.
+*   **Key Capabilities:**
+    *   Analyzing the target job description.
+    *   Extracting key requirements, tech stack, and keywords.
+    *   Tailoring Fred's profile to highlight relevant experiences.
+
+### 3. 📊 Application Tracker (`app-tracker`) - *Future*
+*   **Purpose:** Keep track of the application lifecycle.
+*   **Key Capabilities:**
+    *   Saving job application statuses to a localized tracker (markdown or CSV).
+    *   Analyzing response rates and sending follow-up alerts.
+
+---
+
+## 🛠️ Environment & Tools
+
+### Managing Agent Skills
+
+*   **List installed skills:**
+    ```bash
+    npx skills list
+    ```
+*   **Add a new skill from a repository:**
+    ```bash
+    npx skills add <owner/repo> --skill <skill-name>
+    ```
+*   **Sync local skills:**
+    ```bash
+    npx skills experimental_install
+    ```
