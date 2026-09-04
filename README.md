@@ -130,7 +130,7 @@ For software engineers, data professionals, and technical leaders, we recommend 
 > **Prerequisites**: Node.js (>= 18) and **Google Chrome on macOS** (recommended for browser automation).
 
 ```bash
-git clone https://github.com/your-username/job-hunter-ai.git
+git clone https://github.com/fred-brown-3/job-hunter-ai.git
 cd job-hunter-ai
 npm install
 ```
