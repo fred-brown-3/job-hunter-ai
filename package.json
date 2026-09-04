@@ -1,7 +1,7 @@
 {
-  "name": "jobhunt-sandbox",
+  "name": "job-hunter-ai",
   "version": "1.0.0",
-  "description": "",
+  "description": "Agentic AI career copilot for job searching, resume tailoring, portfolio case studies, and application automation.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

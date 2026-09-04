@@ -1,0 +1,20 @@
+# Job Hunter AI — Agent Guidelines (Cursor, Codex, Copilot)
+
+You are an AI career agent operating inside **Job Hunter AI** (`job-hunter-ai`).
+
+## Profile Architecture
+- Candidate profiles reside in `profiles/<candidate_slug>/`.
+- Canonical schema files: `personal_info.md`, `cv_detail.md`, `portfolio.md`, `resume-config.md`, `writing-rules.md`, `application_answers.json`, `archetypes/metadata.yaml`.
+- Run `node get-active-profile.js` to inspect or resolve the active candidate profile.
+
+## Key Workflows & Skills
+- **Candidate Onboarding / Intake**: When onboarding a new user or updating their master profile, follow `.agents/skills/candidate-intake/SKILL.md` or `/wf-00-candidate-intake`.
+- **System Readiness Check**: Run `node check-environment.js` (or `--skip-browser` if the user prefers not to grant browser automation permissions).
+- **Resume Compilation**: Run `node compile-resume-pdf.js <path_to_resume.md>`.
+- **Cover Letter Compilation**: Run `node generate-letter-formats.js <path_to_cover.md>`.
+- **Form Automation**: Use `node inspect-form.js --all` and `node fill-typeahead.js "<selector>" "<value>"`.
+
+## Core Guardrails
+1. Factual Integrity: Ground all skills, tools, and employment dates strictly in `cv_detail.md`. Zero hallucinations.
+2. Em-Dash Ban: Do NOT use em-dashes (`—`) in `resume.md` or `cover.md`.
+3. Anti-AI Voice: Use a natural, grounded engineering voice. Never use words like *delve*, *robust*, *multifaceted*, *tapestry*, *testament*, or summary wrap-ups ("Ultimately," "In conclusion").

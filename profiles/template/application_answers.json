@@ -1,0 +1,24 @@
+{
+  "work_authorization": {
+    "authorized_in_us": "Yes",
+    "requires_sponsorship_now_or_future": "No",
+    "visa_status": "US Citizen / Permanent Resident"
+  },
+  "logistics": {
+    "notice_period": "2 weeks notice",
+    "earliest_start_date": "Immediate / 2 weeks",
+    "willing_to_relocate": "No",
+    "remote_preference": "Remote preferred, hybrid local acceptable"
+  },
+  "compensation": {
+    "minimum_base_salary": "$180,000",
+    "target_base_salary": "$190,000 - $210,000",
+    "desired_total_compensation": "$220,000+",
+    "form_answer": "$180,000 - $200,000"
+  },
+  "common_prompts": {
+    "why_company": "I am excited by your engineering challenges, mission, and the opportunity to contribute high-impact system architecture and technical leadership to the team.",
+    "how_heard": "LinkedIn",
+    "background_check_consent": "Yes"
+  }
+}

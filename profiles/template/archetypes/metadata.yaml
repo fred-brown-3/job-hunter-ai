@@ -1,0 +1,87 @@
+version: "1.0"
+candidate_name: "Candidate Name"
+contact:
+  email: "candidate@example.com"
+  phone: "555-123-4567"
+  linkedin: "https://www.linkedin.com/in/candidate"
+  portfolio: "https://candidate-portfolio.example.com"
+
+archetypes:
+  - id: "01_senior_software_engineer_backend"
+    title: "Senior / Staff Software Engineer (Backend & Distributed Systems)"
+    headline_title: "Senior Staff Backend & Distributed Systems Engineer"
+    markdown_file: "01_senior_software_engineer_backend.md"
+    pdf_file: "01_senior_software_engineer_backend.pdf"
+    target_roles:
+      - Staff Software Engineer
+      - Senior Backend Engineer
+      - Distributed Systems Engineer
+      - Principal Software Engineer
+    core_skills:
+      - Distributed Systems Architecture
+      - Microservices & High-Throughput APIs
+      - Node.js / Go / Python
+      - PostgreSQL, Redis & Relational Schema Design
+      - AWS (ECS, RDS, S3, SQS, Lambda)
+      - Event Streaming & Kafka
+    key_accomplishments:
+      - Architected and delivered high-throughput microservices handling 15M+ daily requests.
+      - Reduced infrastructure compute overhead by $320K annually via ECS containerization.
+    selection_triggers:
+      - Backend
+      - Distributed Systems
+      - Microservices
+      - REST API
+      - High Throughput
+      - Scalability
+
+  - id: "02_engineering_manager"
+    title: "Engineering Manager (Team Leadership & Delivery)"
+    headline_title: "Engineering Manager & Technical Delivery Leader"
+    markdown_file: "02_engineering_manager.md"
+    pdf_file: "02_engineering_manager.pdf"
+    target_roles:
+      - Engineering Manager
+      - Software Engineering Manager
+      - Technical Team Lead
+      - Director of Engineering
+    core_skills:
+      - Engineering Leadership & Team Mentorship
+      - Agile Delivery & Roadmap Planning
+      - Cross-functional Stakeholder Management
+      - CI/CD Deployment Velocity & Quality
+      - Incident Management & 99.98% SLA Uptime
+    key_accomplishments:
+      - Mentored and scaled an 8-engineer team, cutting deployment failures by 65%.
+      - Partnered directly with product and executive teams on multi-quarter roadmaps.
+    selection_triggers:
+      - Engineering Manager
+      - Management
+      - People Manager
+      - Team Lead
+      - Hiring
+      - Mentorship
+
+  - id: "03_full_send_executive_resume"
+    title: "Full Send Comprehensive Executive Resume (Maximum Career Detail)"
+    headline_title: "Senior Engineering & Technology Leader"
+    markdown_file: "03_full_send_executive_resume.md"
+    pdf_file: "03_full_send_executive_resume.pdf"
+    target_roles:
+      - Principal Engineer
+      - Director of Software Engineering
+      - Head of Engineering
+      - VP of Engineering
+    core_skills:
+      - Full-Lifecycle System Architecture
+      - Cloud Infrastructure & Scalability
+      - Organizational & Team Leadership
+      - Data & Analytics Platform Engineering
+    key_accomplishments:
+      - 10+ years of end-to-end technical leadership across high-growth engineering organizations.
+    selection_triggers:
+      - Executive
+      - Director
+      - Head of
+      - VP
+      - Complete History
